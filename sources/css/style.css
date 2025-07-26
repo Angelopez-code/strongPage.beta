@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Grafiiti";
+    src: url("/sources/Font/Act_Of_Rejection.ttf");
+}
+/* variables */
+:root{
+    --font-family-logo:"Grafiiti";
+    --font-family-paragraph:"Bebas Neue", sans-serif;;
+    --font-size-logo:18px;
+    --font-size-paragraph:12px;
+}
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body::-webkit-scrollbar { 
+    display: none;
+}
+/*Estilos de el navbar*/
+.logo{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.logo .strong{
+    font-family: var(--font-family-logo);
+    font-size: var(--font-size-logo);
+}
+.logo .texto-cuentas{
+    font-size: var(--font-size-paragraph);
+    font-family: var(--font-family-paragraph);
+}
+/* estilos de el anuncio */
+.anun{
+    height: 20px;
+    text-align: center;
+}
+.anun p{
+    font-size: 12px;
+    font-family: var(--font-family-paragraph);
+}
+/* catalogo */
+.catalogo{
+    height: auto;
+    display: grid;
+    justify-content: center;
+}
+.catalogo .productos{
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.catalogo .productos img{
+    height: 250px;
+    width: 200px;
+}
+.catalogo .productos button{
+    width: 60px;
+    font-size: var(--font-size-paragraph);
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    color: white;
+    background-color:black;
+}
