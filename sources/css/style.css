@@ -7,8 +7,9 @@
 :root{
     --font-family-logo:"Grafiiti";
     --font-family-paragraph:"Bebas Neue", sans-serif;;
-    --font-size-logo:18px;
-    --font-size-paragraph:12px;
+    --font-size-logo:22px;
+    --font-size-paragraph:16px;
+    --font-size-button:14px;
 }
 /*Estilos generales*/
 *{
@@ -24,11 +25,12 @@ body::-webkit-scrollbar {
 }
 /*Estilos de el navbar*/
 .logo{
-    height: 40px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
+    align-items: center;
 }
 .logo .strong{
     font-family: var(--font-family-logo);
@@ -52,9 +54,12 @@ body::-webkit-scrollbar {
     height: auto;
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
 }
 .catalogo .productos{
-    height: 300px;
+    height: 230px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -62,15 +67,24 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 .catalogo .productos img{
+    height: 180px;
+    width: 130px;
+}
+.catalogo .productos button{
+    width: 80px;
+    font-size: var(--font-size-button);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    background-color:black;
+}
+@media (min-width:430px) {
+    .catalogo .productos{
+        height: 320px;
+    }
+    .catalogo .productos img{
     height: 250px;
     width: 200px;
 }
-.catalogo .productos button{
-    width: 60px;
-    font-size: var(--font-size-paragraph);
-    border: none;
-    border-radius: 5px;
-    height: 20px;
-    color: white;
-    background-color:black;
 }
