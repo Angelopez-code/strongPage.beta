@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: "Grafiiti";
-    src: url("/sources/Font/Act_Of_Rejection.ttf");
+    src: url("./Font/Act_Of_Rejection.ttf");
 }
 /* variables */
 :root{
